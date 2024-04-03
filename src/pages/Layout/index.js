@@ -33,9 +33,10 @@ const Layout = () => {
   useEffect(() => {
     dispatch(getBillList())
   }, [dispatch])
+  
   const navigate = useNavigate()
   const switchRoute = (path) => { 
-    console.log(path);
+    // console.log(path);
     navigate(path)
   }
   return (
